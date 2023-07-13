@@ -1,0 +1,137 @@
+\documentclass{book}
+% tweak dimensions here if you want equal margins
+\usepackage[
+  top=2cm,
+  bottom=2cm,
+  left=3cm,
+  right=2cm,
+  headheight=17pt,
+  includehead,
+  includefoot,
+  heightrounded, 
+]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{kpfonts}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+\usepackage{emptypage}
+\usepackage[
+    backend=biber,
+    style=apa,
+]{biblatex}
+\usepackage{nameref}
+\usepackage{tikz}
+\usetikzlibrary{patterns, shapes.geometric, arrows}
+\usetikzlibrary{calc}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{pgfplots}
+\DeclareUnicodeCharacter{2212}{−}
+\usepgfplotslibrary{groupplots,dateplot}
+\pgfplotsset{compat=newest}
+
+\pagestyle{fancy}
+
+\fancypagestyle{titlepage}{
+	\fancyhf{}
+	\renewcommand{\headrulewidth}{0pt}
+}
+
+\addbibresource{references.bib}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \includegraphics[width=\textwidth]{assets/banner.png}
+
+        \vspace{2cm}
+
+        \Large
+        Master's Thesis
+
+        \rule{\linewidth}{0.5pt}
+        \Huge
+        \textbf{Unofficial Master Thesis Template for the University Of Groningen}\\[-1.1ex]
+        \rule{\linewidth}{0.5pt}\\[0.4cm]
+
+        \vspace{1cm}
+
+        \Large
+
+        \textit{\textbf{Author}}
+        \hfill
+        \textit{\textbf{Supervisors}}
+
+        \large
+        \vspace{0.1cm}
+        Your Name
+        \hfill
+        Dr. Clever Person \\
+        \small {\color{darkgray} s1234567}
+        \hfill
+        \small {\color{darkgray} Artificial Intelligence, University of Groningen} \\
+
+        \hfill ~ \\
+        \hfill \large Prof. Dr. Cleverer Person \\
+        \hfill \small {\color{darkgray} Artificial Intelligence, University of Groningen} \\
+
+
+        \vfill
+
+
+        \normalsize
+        \textit{To fulfill the requirements for the degree of \\ Master of Science in Artificial Intelligence \\ at the University of Groningen}
+
+        \vspace{1cm}
+
+        \today
+    \end{center}
+\end{titlepage}
+
+\newpage
+
+\include{Abstract.tex}
+
+\newpage
+
+\include{Acknowledgements.tex}
+
+\newpage
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\newpage
+
+\include{Chapter.tex}
+
+% \include{Literature.tex}
+% % 
+% \include{EligibilityTraces.tex}
+
+% \include{Solutions.tex}
+
+% \include{Methods.tex}
+
+% \include{Results.tex}
+% \include{Results2.tex}
+
+% \include{Conclusion.tex}
+
+\printbibliography
+
+\include{Appendix.tex}
+
+\end{document}
