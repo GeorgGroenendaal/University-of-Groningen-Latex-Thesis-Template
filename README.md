@@ -8,7 +8,7 @@ Other than that, feel free to use it and modify it as you wish.
 
 ## Previews
 
-Full output can be found [here](./thesis.pdf).
+Full output can be found [here](./Thesis.pdf).
 
 ### Title Page
 
